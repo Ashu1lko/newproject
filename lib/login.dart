@@ -26,7 +26,7 @@ class Login extends StatelessWidget {
                 Column(
                   children: [
                    
-                    SizedBox(height: 20,),
+                    SizedBox(height: 10,),
                     
                     SizedBox(height: 30,)
                   ],
@@ -73,15 +73,11 @@ class Login extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                     Text("Forgot password        ",style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18
-                    ),),
+                     
                     Text("Dont have an account?"),
                     Text("Sign Up",style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      fontSize: 18
-                    ),),
+                      fontSize: 18                    ),),
                   ],
                 )
               ],
