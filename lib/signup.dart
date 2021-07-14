@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+
 class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -63,7 +66,12 @@ class Signup extends StatelessWidget {
                         child: MaterialButton(
                           minWidth: double.infinity,
                           height:60,
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => GoogleMap(),)
+            );
+                          },
                           color:Theme.of(context).primaryColor,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40)
